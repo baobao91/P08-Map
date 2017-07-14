@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 UiSettings ui = map.getUiSettings();
                 ui.setCompassEnabled(true);
                 ui.setZoomControlsEnabled(true);
-                
+
                 int permissionCheck = ContextCompat.checkSelfPermission(MainActivity.this,
                         android.Manifest.permission.ACCESS_FINE_LOCATION);
 
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                         .title("Central")
                         .snippet("Block 3A, Orchard Ave 3, 134542 \n" +
                                 "Operating hours: 11am-8pm\n" +
-                                "Tel:67788652\n")
+                                "Tel:67788652")
                         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED)));
 
                 map.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
