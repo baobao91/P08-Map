@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 UiSettings ui = map.getUiSettings();
                 ui.setCompassEnabled(true);
                 ui.setZoomControlsEnabled(true);
-
-
+                
                 int permissionCheck = ContextCompat.checkSelfPermission(MainActivity.this,
                         android.Manifest.permission.ACCESS_FINE_LOCATION);
 
@@ -113,13 +112,10 @@ public class MainActivity extends AppCompatActivity {
 
                 if (spnLocation.getSelectedItemPosition() == 0) {
 
-
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(poi_NorthPoint,
                             15));
 
                 } else if (spnLocation.getSelectedItemPosition() == 1){
-
-
 
                     map.moveCamera(CameraUpdateFactory.newLatLngZoom(poi_Downtown,
                             15));
@@ -129,10 +125,8 @@ public class MainActivity extends AppCompatActivity {
                             15));
                 }
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
     }
